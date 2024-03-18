@@ -1,0 +1,16 @@
+div{
+    border: 2px solid red;
+    width:120px;
+    height:130px;
+}
+
+.input{
+    opacity: 0.3;
+}
+
+.Calculator{
+    display:flex;
+    flex-direction: column;
+}
+
+
