@@ -3,10 +3,7 @@ div{
     width:120px;
     height:130px;
 }
-
-.input{
-    opacity: 0.3;
-}
+/*  */
 
 .Calculator{
     display:flex;
@@ -14,3 +11,6 @@ div{
 }
 
 
+body{
+    background-color: grey;
+}
