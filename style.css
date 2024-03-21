@@ -14,3 +14,19 @@ div{
 body{
     background-color: grey;
 }
+.longbuttons{
+  display:flex;
+}
+.longbuttons button{
+    flex-grow:1;
+}
+.operators{
+  display:flex;
+  justify-content: center
+}
+
+.numbers{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

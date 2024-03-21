@@ -83,7 +83,8 @@ operatorsbuttons.forEach((operator)=>{
         
     })
 })
-
+const clearInput =  document.querySelector('.longbuttons').appendChild(document.createElement('button'));
+clearInput.textContent="AC";
 const equalsTo =  document.querySelector('.longbuttons').appendChild(document.createElement('button'));
 equalsTo.textContent = "="
 equalsTo.addEventListener('click',()=>{
@@ -91,10 +92,15 @@ equalsTo.addEventListener('click',()=>{
    operatorEntered='';
 })
 
-
+clearInput.addEventListener('click',()=>{
+    num1='';
+    num2='';
+    input.textContent='';
+    operatorEntered='';
+})
 
 function arthematicOperations(operator , num1,num2){
-    if(operator == '+') return input.textContent = num1+num2;
+    if(operator == '+') return input.textContent = parseInt(num1)+parseInt(num2);
     else if(operator == '-') return input.textContent = num1-num2;
     else if(operator == '*') return input.textContent = num1*num2;
     else if(operator == '/') return input.textContent = num1/num2;
