@@ -65,7 +65,7 @@ console.log(operatorsbuttons);
 
 operatorsbuttons.forEach((operator)=>{
     operator.addEventListener('click',()=>{
-        if(operatorEntered!=''){
+        if(operatorEntered!='' && num1!=''){
             
             num1 = (arthematicOperations(operatorEntered,num2,num1));
             operatorEntered='';
@@ -77,6 +77,7 @@ operatorsbuttons.forEach((operator)=>{
         if(num2==''){
             alert('enter a number first');
             operatorEntered='';
+            input.textContent='';
         }
         else input.textContent+=operator.textContent;
         
@@ -107,6 +108,3 @@ function arthematicOperations(operator , num1,num2){
     else if(operator == '^') return input.textContent = Math.pow(num1,num2);
 }
 
-//Entering another operator or clicking equals to sign gives the result
-
-// function Result( )
